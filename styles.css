@@ -1,0 +1,65 @@
+body {
+  background: #ccc;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#container {
+  /* 50px * 2 + 10px * 2 */
+  margin: 16px auto;
+}
+
+#board {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap;を使うことで、親要素の幅から余る子要素を折り返して、親要素に入れる。 */
+}
+
+#timer {
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-align: right;
+}
+
+#board li {
+  background: #00aaff;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 4px 0 #0088cc;
+}
+
+#board li.pressed {
+  background: #ccc;
+  box-shadow: none;
+  margin-top: 9px;
+  margin-bottom: 1px;
+}
+
+#btn {
+  cursor: pointer;
+  user-select: none;
+  background: #f44336;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #d1483e;
+}
+
+#btn:active {
+  margin-top: 12px;
+  box-shadow: none;
+}
+
